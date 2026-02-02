@@ -9,11 +9,11 @@ tags: ["Divulgación Científica", "FCFM", "BUAP"]
 
 # Primer Concurso de videos sobre Divulgación Científica
 
-Como parte de la celebración del creciente alcance que tienen los contenidos digitales en redes sociales, la Facultad de Ciencias Físico Matemáticas de la Benemérica Universidad Autónoma de Puebla celebró el Primer COncurso de videos sobre Dibulgación Científica, realizado el 17 de mayo del 2021. La participación constaba de tres ramas; Matemáticas, Física y Actuaría. La participación por equipos de cuatro integrantes significó crear un grupo de trabajo con el que he trabajo hasta el día de hoy: Jadihel Antonio Martinez Ramon, Israel Zayas Xicotencatl y Jhoselin Daniel Tecpoyotl.
+Como parte de la celebración del creciente alcance que tienen los contenidos digitales en redes sociales, la Facultad de Ciencias Físico Matemáticas de la Benemérita Universidad Autónoma de Puebla celebró el Primer Concurso de videos sobre Divulgación Científica, realizado el 17 de mayo del 2021. La participación constaba de tres ramas; Matemáticas, Física y Actuaría. La participación por equipos de cuatro integrantes significó crear un grupo de trabajo con el que he trabajado hasta el día de hoy: Jadihel Antonio Martinez Ramon, Israel Zayas Xicotencatl y Jhoselin Daniel Tecpoyotl.
 
 ## Resultados
 
-Como resultado de nuestra prarticipación, realizamos un video titulado MECÁNICA I EN 4 MINUTOS, un tema interesante y primordial para aquellos que tienen la intención de comenzar una carrera en Física o curiosos que desean saber más sobre el mundo que nos rodea. Con este video logramos obtener el primer lugar en la rama de Física.
+Como resultado de nuestra participación, realizamos un video titulado MECÁNICA I EN 4 MINUTOS, un tema interesante y primordial para aquellos que tienen la intención de comenzar una carrera en Física o curiosos que desean saber más sobre el mundo que nos rodea. Con este video logramos obtener el primer lugar en la rama de Física.
 
 <div class="my-10 group">
   <a 
