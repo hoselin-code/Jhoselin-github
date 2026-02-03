@@ -2,7 +2,6 @@
 title: "Toma de protesta del grupo estudiantil Descubriendo Pequeños Científicos"
 description: "Toma de protesta del grupo estudiantil Descubriendo Pequeños Científicos"
 pubDate: 2023-03-27
-heroImage: "/Fondo.svg"
 readingTime: "5 min"
 tags: ["Divulgación Científica", "Descubriendo Pequeños Científicos", "STEM"]
 ---

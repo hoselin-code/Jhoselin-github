@@ -2,7 +2,6 @@
 title: "Primer Concurso de videos sobre Divulgación Científica"
 description: "Primer lugar (Física) en el 1er Concurso de videos sobre Divulgación Científica realizado el 17 de mayo con el video: Mecánica I en 4 minutos"
 pubDate: 2021-05-17
-heroImage: "/pixel2025.png"
 readingTime: "5 min"
 tags: ["Divulgación Científica", "FCFM", "BUAP"]
 ---

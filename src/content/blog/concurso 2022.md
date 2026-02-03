@@ -2,7 +2,6 @@
 title: "Segundo Concurso de videos sobre Divulgación Científica"
 description: "Segundo lugar (Física) en el 2do Concurso de videos sobre Divulgación Científica realizado el 23 de septiembre con el video: Mecánica I en 4 minutos"
 pubDate: 2022-09-23
-heroImage: "/pixel2025.png"
 readingTime: "5 min"
 tags: ["Divulgación Científica", "FCFM", "BUAP"]
 ---

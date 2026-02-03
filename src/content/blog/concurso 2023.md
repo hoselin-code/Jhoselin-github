@@ -2,7 +2,6 @@
 title: "Jóvenes Talento"
 description: "Proyecto ganador: Ruta Astronómica Metzteocuitlatl"
 pubDate: 2023-11-21
-heroImage: "/pixel2025.png"
 readingTime: "5 min"
 tags: ["Divulgación Científica", "Asociación Astronómica Metzteocuitlatl", "STEM"]
 ---
