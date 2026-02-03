@@ -34,27 +34,37 @@ const skills = [
   { 
     name: "DaVinci Resolve", 
     level: 30, 
-    icon: SiTypescript // Puedes buscar un icono mejor después si quieres
+    icon: FaLaptop
   },
   { 
     name: "Affinity", 
     level: 60, 
-    icon: FaReact
+    icon: FaLaptop
   },
   { 
     name: "Latex", 
     level: 70, 
-    icon: FaNodeJs
+    icon: FaLaptop
   },
   { 
     name: "Lightroom", // Corregí "Ligthroom"
     level: 60, 
-    icon: FaPython
+    icon: FaLaptop
   },
   { 
     name: "Illustrator", // Corregí "Ilustrator"
     level: 60, 
-    icon: SiAstro
+    icon: FaLaptop
+  },
+  { 
+    name: "Fotografía", // Corregí "Ilustrator"
+    level: 80, 
+    icon: FaLaptop
+  },
+  { 
+    name: "Video", // Corregí "Ilustrator"
+    level: 80, 
+    icon: FaLaptop
   }
 ];
 
@@ -95,6 +105,13 @@ const moreSkills = [
     endDate: "Actualidad",
     icon: FaLaptop // AGREGADO
   },
+   { 
+    name: "Fotógrafo", 
+    level: 90, 
+    startDate: "2014",
+    endDate: "Actualidad",
+    icon: FaLaptop // AGREGADO
+  }
 ];
 
 // Formación Académica
@@ -183,9 +200,13 @@ const edu = [
                     </div>
                     <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 theme-transition-color">{skill.name}</h3>
                   </div>
-                  <span class="text-xs font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1 rounded-full theme-transition-all">{skill.level}%</span>
                 </div>
-                
+                <div class="relative h-2 w-full bg-zinc-100 dark:bg-zinc-700 overflow-hidden rounded-full theme-transition-bg">
+                  <div 
+                    class="absolute top-0 left-0 h-full bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-800 dark:from-zinc-300 dark:via-zinc-400 dark:to-zinc-200 rounded-full theme-transition-bg"
+                    style={`width: ${skill.level}%`}
+                  ></div>
+                </div>
                 <div class="flex justify-between mt-2 text-xs text-zinc-400 dark:text-zinc-500 font-mono theme-transition-color">
                   <span>{skill.startDate}</span>
                   <span>{skill.endDate}</span>
@@ -245,9 +266,13 @@ const edu = [
                     </div>
                     <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 theme-transition-color">{skill.name}</h3>
                   </div>
-                  <span class="text-xs font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1 rounded-full theme-transition-all">{skill.level}%</span>
                 </div>
-                
+                <div class="relative h-2 w-full bg-zinc-100 dark:bg-zinc-700 overflow-hidden rounded-full theme-transition-bg">
+                  <div 
+                    class="absolute top-0 left-0 h-full bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-800 dark:from-zinc-300 dark:via-zinc-400 dark:to-zinc-200 rounded-full theme-transition-bg"
+                    style={`width: ${skill.level}%`}
+                  ></div>
+                </div>
                 <div class="flex justify-between mt-2 text-xs text-zinc-400 dark:text-zinc-500 font-mono theme-transition-color">
                   <span>{skill.startDate}</span>
                   <span>{skill.endDate}</span>
