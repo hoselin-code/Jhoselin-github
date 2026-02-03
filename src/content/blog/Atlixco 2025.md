@@ -2,7 +2,6 @@
 title: "Segundo Encuentro Nacional de Niñas STEM"
 description: "Segundo Encuentro Nacional de Niñas STEM con Sede en Atlixco, Puebla."
 pubDate: 2025-06-24
-heroImage: "/pixel2025.jpg"
 readingTime: "5 min"
 tags: ["Asociación Astronómica Metzteocuitlatl", "STEM"]
 ---

@@ -37,14 +37,14 @@ Como parte del compromiso con la divulgavión científica y la democratización 
       </div>
       <div class="p-8 sm:w-2/3 flex flex-col justify-center">
         <div class="flex items-center space-x-2 mb-3">
-          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">Boletin</span>
+          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">Boletín</span>
           <span class="text-xs font-medium text-zinc-500">Descubriendo Pequeños Científicos</span>
         </div>
         <h3 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2"> Toma de Protesta: Descubriendo Pequeños Científicos </h3>
-        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"> Conoce más sobre el evento y la labor de este grupo académico. <strong>FCFM</strong>.
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"> Conoce más sobre el evento y la labor de este grupo académico. <strong>DPC</strong>.
         </p>
         <div class="mt-6 flex items-center text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 transition-colors">
-          <span>Ver en Facebook</span>
+          <span>Ver Boletín</span>
           <svg class="ml-2 w-4 h-4 transition-transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
           </svg>
