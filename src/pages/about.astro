@@ -92,7 +92,23 @@ const moreSkills = [
   },
 ];
 ---
-
+// Experiencia Profesional
+// Aquí puedes cambiar "startDate" y "endDate" por lo que necesites
+const edu = [
+  { 
+    name: "Licenciatura en Física, Facultad de Ciencias Físico Matemáticas, BUAP", 
+    level: 100, 
+    startDate: "2019",
+    endDate: "2024"
+  },
+  { 
+    name: "Técnico en Electricidad, Centro de Bachillerato Tecnológico industrial y de servicios No. 16", 
+    level: 100, 
+    startDate: "2016",
+    endDate: "2019"
+  }
+];
+----
 <BaseLayout title="Acerca de mí" description="Conozca más sobre mis habilidades y experiencia.">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 theme-transition-all">
     <div class="relative mb-12 sm:mb-16 md:mb-20">
@@ -147,6 +163,35 @@ const moreSkills = [
       </div>
     </div>
     
+    <div class="mb-16 sm:mb-20 md:mb-24 theme-transition-all">
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-8 sm:mb-12 text-center theme-transition-color">Formación Académica</h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          {edu.map((skill, index) => (
+            <div key={`${skill.name}-dup-${index}`} class="skill-card bg-white dark:bg-zinc-800/50 rounded-xl border border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 transition-all duration-300 hover:shadow-lg theme-transition-element">
+              <div class="p-4 sm:p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 flex items-center justify-center bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-800 dark:text-zinc-200 transform transition-transform group-hover:rotate-12 theme-transition-bg theme-transition-color">
+                      <skill.icon size={20} className="transform transition-all" />
+                    </div>
+                    <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100 theme-transition-color">{skill.name}</h3>
+                  </div>
+                  <span class="text-xs font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1 rounded-full theme-transition-all">{skill.level}%</span>
+                </div>
+                
+                              
+                <div class="flex justify-between mt-2 text-xs text-zinc-400 dark:text-zinc-500 font-mono theme-transition-color">
+                  <span>{skill.startDate}</span>
+                  <span>{skill.endDate}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+      </div>
+    </div>
+
+
     <div class="mb-16 theme-transition-all">
       <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-8 sm:mb-12 text-center theme-transition-color">Competencias Profesionales</h2>
       
