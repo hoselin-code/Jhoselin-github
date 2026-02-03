@@ -46,13 +46,13 @@ const skills = [
     icon: FaNodeJs
   },
   { 
-    name: "Python", 
-    level: 75, 
+    name: "Ligthroom", 
+    level: 60, 
     icon: FaPython
   },
   { 
-    name: "Astro", 
-    level: 80, 
+    name: "Ilustrator", 
+    level: 60, 
     icon: SiAstro
   }
 ];
@@ -63,35 +63,30 @@ const moreSkills = [
   { 
     name: "Asociación Astronómica Metzteocuitlatl", 
     level: 100, 
-    icon: FaJs,
     startDate: "2023",
     endDate: "Actualidad"
   },
   { 
     name: "Asesor Académico en Centro de Bachillerato Tecnológico industrial y de servicios No. 16 (Prácticas Profesionales)", 
     level: 100, 
-    icon: FaNodeJs,
     startDate: "Ago 2024",
     endDate: "Dic 2024"
   },
    { 
     name: "Creador de Contenido en Descubriendo Pequeños Científicos (Servicio Social)", 
-    level: 100, 
-    icon: FaNodeJs,
+    level: 100,
     startDate: "Ene 2023",
     endDate: "Jul 2023"
   },
   { 
     name: "Edición de Video", 
-    level: 90, 
-    icon: SiTypescript,
+    level: 90,
     startDate: "2014",
     endDate: "Actualidad"
   },
   { 
     name: "Diseño Gráfico", 
     level: 85, 
-    icon: FaReact,
     startDate: "Ene 2023",
     endDate: "Actualidad"
   },
@@ -153,7 +148,7 @@ const moreSkills = [
     </div>
     
     <div class="mb-16 theme-transition-all">
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-8 sm:mb-12 text-center theme-transition-color">Competencias profesionales</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-8 sm:mb-12 text-center theme-transition-color">Competencias Profesionales</h2>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           {skills.map((skill, index) => (
@@ -177,8 +172,8 @@ const moreSkills = [
                 </div>
                 
                 <div class="flex justify-between mt-2 text-xs text-zinc-400 dark:text-zinc-500 font-mono theme-transition-color">
-                  <span>Beginner</span>
-                  <span>Advanced</span>
+                  <span>Principiante</span>
+                  <span>Avanzado</span>
                 </div>
               </div>
             </div>
@@ -187,7 +182,7 @@ const moreSkills = [
     </div>
 
     <div class="mb-16 sm:mb-20 md:mb-24 theme-transition-all">
-      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-8 sm:mb-12 text-center theme-transition-color">Experiencia y Proyectos</h2>
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-8 sm:mb-12 text-center theme-transition-color">Experiencia Profesional</h2>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           {moreSkills.map((skill, index) => (
@@ -203,13 +198,7 @@ const moreSkills = [
                   <span class="text-xs font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1 rounded-full theme-transition-all">{skill.level}%</span>
                 </div>
                 
-                <div class="relative h-2 w-full bg-zinc-100 dark:bg-zinc-700 overflow-hidden rounded-full theme-transition-bg">
-                  <div 
-                    class="absolute top-0 left-0 h-full bg-gradient-to-r from-zinc-700 via-zinc-600 to-zinc-800 dark:from-zinc-300 dark:via-zinc-400 dark:to-zinc-200 rounded-full theme-transition-bg"
-                    style={`width: ${skill.level}%`}
-                  ></div>
-                </div>
-                
+                              
                 <div class="flex justify-between mt-2 text-xs text-zinc-400 dark:text-zinc-500 font-mono theme-transition-color">
                   <span>{skill.startDate}</span>
                   <span>{skill.endDate}</span>
