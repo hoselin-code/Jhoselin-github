@@ -1,23 +1,23 @@
 ---
-title: "Primer Concurso de videos sobre Divulgación Científica"
-description: "Primer lugar (Física) en el 1er Concurso de videos sobre Divulgación Científica realizado el 17 de mayo con el video: Mecánica I en 4 minutos"
-pubDate: 2021-05-17
+title: "Segundo Concurso de videos sobre Divulgación Científica"
+description: "Segundo lugar (Física) en el 2do Concurso de videos sobre Divulgación Científica realizado el 23 de septiembre con el video: Mecánica I en 4 minutos"
+pubDate: 2022-09-23
 heroImage: "/pixel2025.png"
 readingTime: "5 min"
 tags: ["Divulgación Científica", "FCFM", "BUAP"]
 ---
 
-# Primer Concurso de videos sobre Divulgación Científica
+# Segundo Concurso de videos sobre Divulgación Científica
 
-Como parte de la celebración del creciente alcance que tienen los contenidos digitales en redes sociales, la Facultad de Ciencias Físico Matemáticas de la Benemérita Universidad Autónoma de Puebla celebró el Primer Concurso de videos sobre Divulgación Científica, realizado el 17 de mayo del 2021. La participación constaba de tres ramas; Matemáticas, Física y Actuaría. La participación por equipos de cuatro integrantes significó crear un grupo de trabajo con el que he trabajado hasta el día de hoy: Jadihel Antonio Martinez Ramon, Israel Zayas Xicotencatl y Jhoselin Daniel Tecpoyotl.
+Como parte de la celebración del creciente alcance que tienen los contenidos digitales en redes sociales, la Facultad de Ciencias Físico Matemáticas de la Benemérita Universidad Autónoma de Puebla celebró el Segundo Concurso de videos sobre Divulgación Científica, realizado el 23 de septiembre del 2022. La participación constaba de tres ramas; Matemáticas, Física y Actuaría. La participación por equipos de cuatro integrantes significó seguir creando contenido con el grupo de trabajo con el que he trabajado hasta el día de hoy: Jadihel Antonio Martinez Ramon, Israel Zayas Xicotencatl y Jhoselin Daniel Tecpoyotl.
 
 ## Resultados
 
-Como resultado de nuestra participación, realizamos un video titulado MECÁNICA I EN 4 MINUTOS, un tema interesante y primordial para aquellos que tienen la intención de comenzar una carrera en Física o curiosos que desean saber más sobre el mundo que nos rodea. Con este video logramos obtener el primer lugar en la rama de Física.
+Como resultado de nuestra participación, realizamos un video titulado ¿Qué es la gravedad?, un tema interesante y cautivador pues es un fenómeno con el que interactuamos a diario. Con este video logramos obtener el segundo lugar en la rama de Física.
 
 <div class="my-10 group">
   <a 
-    href="https://www.youtube.com/watch?v=V1Ku4bAUdsw" 
+    href="https://youtu.be/HikBAeNKyi0?si=hOVJvDz80Gz8CzmH" 
     target="_blank" 
     rel="noopener noreferrer"
     class="relative block overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-md transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:border-zinc-400 dark:hover:border-zinc-600"
@@ -26,7 +26,7 @@ Como resultado de nuestra participación, realizamos un video titulado MECÁNICA
       <div class="relative h-56 sm:h-auto sm:w-1/3 overflow-hidden bg-zinc-100 dark:bg-zinc-800">
         <img 
           src="/youtube.svg" 
-          alt="Mecanica I: Video Premiado" 
+          alt="¿Qué es la gravedad?: Explicación Premiada" 
           class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
@@ -39,11 +39,11 @@ Como resultado de nuestra participación, realizamos un video titulado MECÁNICA
       </div>
       <div class="p-8 sm:w-2/3 flex flex-col justify-center">
         <div class="flex items-center space-x-2 mb-3">
-          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">1er Lugar</span>
-          <span class="text-xs font-medium text-zinc-500">Física - FCFM 2021</span>
+          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">2do Lugar</span>
+          <span class="text-xs font-medium text-zinc-500">Física - FCFM 2022</span>
         </div>
-        <h3 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2"> MECÁNICA I EN 4 MINUTOS </h3>
-        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">  Este video explora algunos de los conceptos a los que te enfrentarás en tu primer semestre de universidad en la carrera de Física. <strong>FCFM</strong>.
+        <h3 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2"> ¿Qué es la gravedad? </h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"> Este video explora la belleza y enigmas de la gravedad. <strong>FCFM</strong>.
         </p>
         <div class="mt-6 flex items-center text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 transition-colors">
           <span>Ver video en Youtube</span>
