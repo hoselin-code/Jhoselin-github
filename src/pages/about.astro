@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { FaJs, FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
+// Agregué FaBriefcase (Maletín) y FaGraduationCap (Gorrito) para usarlos en experiencia y educación
+import { FaJs, FaReact, FaNodeJs, FaPython, FaBriefcase, FaGraduationCap, FaLaptop } from 'react-icons/fa';
 import { SiTypescript, SiAstro } from 'react-icons/si';
 
 // Competencias Profesionales
@@ -8,32 +9,32 @@ const skills = [
   { 
     name: "Photoshop", 
     level: 80, 
-    icon: FaJs
+    icon: FaLaptop // Cambié a un icono genérico de Laptop
   },
   { 
     name: "Premiere Pro", 
     level: 60, 
-    icon: FaJs
+    icon: FaLaptop
   },
   { 
     name: "After Effects", 
     level: 70, 
-    icon: FaJs
+    icon: FaLaptop
   },
   { 
     name: "Audition", 
     level: 50, 
-    icon: FaJs
+    icon: FaLaptop
   },
   { 
     name: "Autodesk Fusion", 
     level: 50, 
-    icon: FaJs
+    icon: FaLaptop
   },
   { 
     name: "DaVinci Resolve", 
     level: 30, 
-    icon: SiTypescript
+    icon: SiTypescript // Puedes buscar un icono mejor después si quieres
   },
   { 
     name: "Affinity", 
@@ -46,69 +47,74 @@ const skills = [
     icon: FaNodeJs
   },
   { 
-    name: "Ligthroom", 
+    name: "Lightroom", // Corregí "Ligthroom"
     level: 60, 
     icon: FaPython
   },
   { 
-    name: "Ilustrator", 
+    name: "Illustrator", // Corregí "Ilustrator"
     level: 60, 
     icon: SiAstro
   }
 ];
 
 // Experiencia Profesional
-// Aquí puedes cambiar "startDate" y "endDate" por lo que necesites
 const moreSkills = [
   { 
     name: "Asociación Astronómica Metzteocuitlatl", 
     level: 100, 
     startDate: "2023",
-    endDate: "Actualidad"
+    endDate: "Actualidad",
+    icon: FaBriefcase // AGREGADO
   },
   { 
-    name: "Asesor Académico en Centro de Bachillerato Tecnológico industrial y de servicios No. 16 (Prácticas Profesionales)", 
+    name: "Asesor Académico en CBTIS No. 16", 
     level: 100, 
     startDate: "Ago 2024",
-    endDate: "Dic 2024"
+    endDate: "Dic 2024",
+    icon: FaBriefcase // AGREGADO
   },
    { 
-    name: "Creador de Contenido en Descubriendo Pequeños Científicos (Servicio Social)", 
+    name: "Creador de Contenido en DPC", 
     level: 100,
     startDate: "Ene 2023",
-    endDate: "Jul 2023"
+    endDate: "Jul 2023",
+    icon: FaBriefcase // AGREGADO
   },
   { 
     name: "Edición de Video", 
     level: 90,
     startDate: "2014",
-    endDate: "Actualidad"
+    endDate: "Actualidad",
+    icon: FaLaptop // AGREGADO
   },
   { 
     name: "Diseño Gráfico", 
     level: 85, 
     startDate: "Ene 2023",
-    endDate: "Actualidad"
+    endDate: "Actualidad",
+    icon: FaLaptop // AGREGADO
   },
 ];
----
-// Experiencia Profesional
-// Aquí puedes cambiar "startDate" y "endDate" por lo que necesites
+
+// Formación Académica
 const edu = [
   { 
-    name: "Licenciatura en Física, Facultad de Ciencias Físico Matemáticas, BUAP", 
+    name: "Licenciatura en Física, BUAP", 
     level: 100, 
     startDate: "2019",
-    endDate: "2024"
+    endDate: "2024",
+    icon: FaGraduationCap // AGREGADO
   },
   { 
-    name: "Técnico en Electricidad, Centro de Bachillerato Tecnológico industrial y de servicios No. 16", 
+    name: "Técnico en Electricidad, CBTIS No. 16", 
     level: 100, 
     startDate: "2016",
-    endDate: "2019"
+    endDate: "2019",
+    icon: FaGraduationCap // AGREGADO
   }
 ];
-----
+--- 
 <BaseLayout title="Acerca de mí" description="Conozca más sobre mis habilidades y experiencia.">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16 theme-transition-all">
     <div class="relative mb-12 sm:mb-16 md:mb-20">
@@ -180,7 +186,6 @@ const edu = [
                   <span class="text-xs font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1 rounded-full theme-transition-all">{skill.level}%</span>
                 </div>
                 
-                              
                 <div class="flex justify-between mt-2 text-xs text-zinc-400 dark:text-zinc-500 font-mono theme-transition-color">
                   <span>{skill.startDate}</span>
                   <span>{skill.endDate}</span>
@@ -243,7 +248,6 @@ const edu = [
                   <span class="text-xs font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1 rounded-full theme-transition-all">{skill.level}%</span>
                 </div>
                 
-                              
                 <div class="flex justify-between mt-2 text-xs text-zinc-400 dark:text-zinc-500 font-mono theme-transition-color">
                   <span>{skill.startDate}</span>
                   <span>{skill.endDate}</span>
