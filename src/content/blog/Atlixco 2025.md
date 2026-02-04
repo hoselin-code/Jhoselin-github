@@ -17,7 +17,7 @@ Lleve a cabo la coordinación del evento, así como las evidencias audiovisuales
 
 <div class="my-10 group">
   <a 
-    href="https://drive.google.com/file/d/1VUy0FVYU8DEoMmlH0gHse46KWU5i2eGZ/view?usp=sharing" 
+    href="https://drive.google.com/file/d/1WHBHwpQUdYFB-tHirM-_fofuhCo-q2_Z/view?usp=sharing" 
     target="_blank" 
     rel="noopener noreferrer"
     class="relative block overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-md transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:border-zinc-400 dark:hover:border-zinc-600"
@@ -58,7 +58,7 @@ Lleve a cabo la coordinación del evento, así como las evidencias audiovisuales
 
 <div class="my-10 group">
   <a 
-    href="https://drive.google.com/file/d/1OykcCrv86RTRjooF1EShSwvWz6n_6TYR/view?usp=sharing" 
+    href="https://drive.google.com/file/d/111ldzHnEfvGbzOOjKAayOj2yyAlI3KR1/view?usp=sharing" 
     target="_blank" 
     rel="noopener noreferrer"
     class="relative block overflow-hidden rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-md transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl hover:border-zinc-400 dark:hover:border-zinc-600"
