@@ -39,7 +39,7 @@ Lleve a cabo la coordinación del evento, así como las evidencias audiovisuales
       </div>
       <div class="p-8 sm:w-2/3 flex flex-col justify-center">
         <div class="flex items-center space-x-2 mb-3">
-          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">2do Lugar</span>
+          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">Reconocimiento</span>
           <span class="text-xs font-medium text-zinc-500">Evento - STEM 2025</span>
         </div>
         <h3 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2"> Reconocimiento </h3>
@@ -80,7 +80,7 @@ Lleve a cabo la coordinación del evento, así como las evidencias audiovisuales
       </div>
       <div class="p-8 sm:w-2/3 flex flex-col justify-center">
         <div class="flex items-center space-x-2 mb-3">
-          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">2do Lugar</span>
+          <span class="px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-white bg-blue-600 rounded-md">Reconocimiento</span>
           <span class="text-xs font-medium text-zinc-500">Evento - STEM 2025</span>
         </div>
         <h3 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2"> Reconocimiento </h3>
