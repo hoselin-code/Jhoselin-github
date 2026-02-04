@@ -45,7 +45,7 @@ Ambos reconocimientos fueron avalados por el Dr. José Ramón Enrique Arrazola R
           <span class="text-xs font-medium text-zinc-500">OLIMPIADA - BUAP 2013</span>
         </div>
         <h3 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2"> Reconocimiento </h3>
-        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"> Accede al reconocimiento otorgado por la FCFM y BUAP. <strong>BBVA</strong>.
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"> Accede al reconocimiento otorgado por la FCFM y BUAP. <strong>FCFM</strong>.
         </p>
         <div class="mt-6 flex items-center text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 transition-colors">
           <span>Ver Documento</span>
@@ -86,7 +86,7 @@ Ambos reconocimientos fueron avalados por el Dr. José Ramón Enrique Arrazola R
           <span class="text-xs font-medium text-zinc-500">OLIMPIADA - BUAP 2013</span>
         </div>
         <h3 class="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2"> Reconocimiento </h3>
-        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"> Accede al reconocimiento otorgado por la FCFM y BUAP. <strong>BBVA</strong>.
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed"> Accede al reconocimiento otorgado por la FCFM y BUAP. <strong>FCFM</strong>.
         </p>
         <div class="mt-6 flex items-center text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 transition-colors">
           <span>Ver Documento</span>
