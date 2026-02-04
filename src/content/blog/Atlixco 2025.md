@@ -55,6 +55,7 @@ Lleve a cabo la coordinación del evento, así como las evidencias audiovisuales
     </div>
   </a>
 </div>
+
 <div class="my-10 group">
   <a 
     href="https://drive.google.com/file/d/1OykcCrv86RTRjooF1EShSwvWz6n_6TYR/view?usp=sharing" 
