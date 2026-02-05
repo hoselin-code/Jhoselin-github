@@ -1,7 +1,7 @@
 ---
 title: "Ranchería Pala en el municipio de Coxcatlán"
 description: "Feria de ciencias en Ranchería Pala en el municipio de Coxcatlán"
-pubDate: 2022-05-24
+pubDate: 2022-12-10
 readingTime: "5 min"
 tags: ["Descubriendo Pequeños Científicos", "STEM"]
 ---
