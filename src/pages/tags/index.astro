@@ -2,19 +2,32 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-// LÓGICA ORIGINAL (Sin cambios)
+// 1. OBTENER BLOG POSTS
 const allPosts = await getCollection('blog');
-const tags = [...new Set(allPosts.flatMap(post => post.data.tags || []))].sort();
 
-const tagObjects = tags.map(tag => {
-  const count = allPosts.filter(post => post.data.tags?.includes(tag)).length;
-  const hue = Math.abs(tag.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 360);
+// 2. DEFINIR VIDEOS MANUALMENTE
+const videos = [
+  { title: "MECÁNICA I", tags: ["Física", "Mecánica", "YouTube"] },
+  { title: "Gravedad", tags: ["Física", "Gravedad", "Historia"] },
+  { title: "Agujeros Negros", tags: ["Astrofísica", "TikTok", "Cosmos"] },
+  { title: "Fractales", tags: ["Matemáticas", "Arte", "TikTok"] }
+];
+
+// 3. COMBINAR ETIQUETAS
+const blogTags = allPosts.flatMap(post => post.data.tags || []);
+const videoTags = videos.flatMap(video => video.tags || []);
+const allTagsRaw = [...blogTags, ...videoTags];
+const uniqueTags = [...new Set(allTagsRaw)].sort();
+
+// 4. CREAR OBJETOS
+const tagObjects = uniqueTags.map(tag => {
+  const postCount = allPosts.filter(post => post.data.tags?.includes(tag)).length;
+  const videoCount = videos.filter(video => video.tags?.includes(tag)).length;
+  const totalCount = postCount + videoCount;
+  
   return { 
     name: tag, 
-    count,
-    // Ya no necesitamos 'size' para el diseño de tarjeta uniforme, pero lo dejo por si lo usas luego.
-    size: Math.max(1, Math.min(3, Math.floor(count / 2) + 1)), 
-    hue
+    count: totalCount
   };
 });
 
@@ -56,27 +69,32 @@ const sortedTags = [...tagObjects].sort((a, b) => b.count - a.count);
           
           <h2 class="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-6 sm:mb-8 text-center theme-transition-color">Temas Populares</h2>
           
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 w-full">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
             {sortedTags.map((tag) => (
               <a 
                 href={`/tags/${tag.name}`}
-                class="group relative overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-zinc-300 dark:hover:border-zinc-700 bg-white dark:bg-zinc-900 theme-transition-element theme-ripple flex flex-col h-full"
-                style={`--tag-hue: ${tag.hue};`}
+                class="group relative overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-zinc-400 dark:hover:border-zinc-600 bg-white dark:bg-zinc-900 theme-transition-element flex flex-col h-full"
               >
-                <div class="absolute inset-0 bg-gradient-to-br from-zinc-50/50 to-zinc-100/50 dark:from-zinc-800/50 dark:to-zinc-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 theme-transition-bg"></div>
+                <div class="absolute inset-0 bg-zinc-50 dark:bg-zinc-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 theme-transition-bg"></div>
                 
-                <div class="relative p-3 sm:p-4 flex items-start gap-3 w-full h-full">
-                  <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 group-hover:bg-accent/10 dark:group-hover:bg-accent/20 group-hover:text-accent-dark dark:group-hover:text-accent-light transition-all duration-300 shadow-sm theme-transition-all" style={`color: hsl(${tag.hue}, 70%, 40%); background-color: hsl(${tag.hue}, 70%, 95%);`}>
-                    <span class="text-sm sm:text-base font-bold">#</span>
+                <div class="relative p-4 sm:p-5 flex items-start gap-4 w-full h-full">
+                  <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-zinc-100 dark:bg-zinc-800 text-black dark:text-white border border-zinc-200 dark:border-zinc-700 transition-all duration-300 group-hover:scale-110">
+                    <span class="text-lg font-bold">#</span>
                   </div>
                   
-                  <div class="flex-1 min-w-0">
-                    <h3 class="text-xs sm:text-sm font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors theme-transition-color break-words whitespace-normal leading-tight">
+                  <div class="flex-1 min-w-0 pt-1">
+                    <h3 class="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-black dark:group-hover:text-white transition-colors theme-transition-color break-words leading-tight">
                       {tag.name}
                     </h3>
-                    <p class="text-[10px] sm:text-xs text-zinc-500 dark:text-zinc-400 mt-1 theme-transition-color">
-                      {tag.count} {tag.count !== 1 ? 'artículos' : 'artículo'}
+                    <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1 theme-transition-color">
+                      {tag.count} {tag.count !== 1 ? 'publicaciones' : 'publicación'}
                     </p>
+                  </div>
+                  
+                  <div class="self-center opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-zinc-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
                   </div>
                 </div>
               </a>
@@ -89,9 +107,7 @@ const sortedTags = [...tagObjects].sort((a, b) => b.count - a.count);
 </BaseLayout>
 
 <script>
-  // Script simplificado, eliminando la complejidad innecesaria de los breakpoints "micro"
   document.addEventListener('DOMContentLoaded', () => {
-    // Fix para la altura en móviles (VH)
     const setVh = () => {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -99,12 +115,11 @@ const sortedTags = [...tagObjects].sort((a, b) => b.count - a.count);
     setVh();
     window.addEventListener('resize', setVh);
 
-    // Soporte táctil básico
     const addTouchSupport = () => {
-      const tagItems = document.querySelectorAll('.theme-ripple');
+      const tagItems = document.querySelectorAll('.group');
       tagItems.forEach(item => {
-        item.addEventListener('touchstart', () => item.classList.add('touch-active'), { passive: true });
-        item.addEventListener('touchend', () => setTimeout(() => item.classList.remove('touch-active'), 150), { passive: true });
+        item.addEventListener('touchstart', () => item.classList.add('active'), { passive: true });
+        item.addEventListener('touchend', () => setTimeout(() => item.classList.remove('active'), 150), { passive: true });
       });
     };
     addTouchSupport();
@@ -112,13 +127,11 @@ const sortedTags = [...tagObjects].sort((a, b) => b.count - a.count);
 </script>
 
 <style>
-  /* Estilos base simplificados */
   .bg-grid-pattern {
     background-size: 20px 20px;
     background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
   }
   
-  /* Animaciones */
   @keyframes blob {
     0% { transform: translate(0px, 0px) scale(1); }
     33% { transform: translate(30px, -50px) scale(1.1); }
@@ -138,11 +151,5 @@ const sortedTags = [...tagObjects].sort((a, b) => b.count - a.count);
   }
   .animate-underline {
     animation: underline 1s ease-out forwards;
-  }
-
-  /* Touch active state */
-  .touch-active {
-    transform: scale(0.98);
-    transition: transform 0.1s;
   }
 </style>
