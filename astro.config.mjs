@@ -18,7 +18,7 @@ const getSiteURL = () => {
 
 // https://astro.build/config
 export default defineConfig({
-  site: `https://JhoselinDanielT.github.io
+  site: `https://JhoselinDanielT.github.io`
   integrations: [
     tailwind(),
     react(),
